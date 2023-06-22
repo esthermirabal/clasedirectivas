@@ -19,8 +19,12 @@
         </thead>
         <tbody>
             <tr *ngFor="let usuario of usuarios">
-                    <td *ngIf="usuario.nombre.length > 0"> {{usuario.nombre}}</td>
-                    <td *ngIf="usuario.apellido.length > 0"> {{usuario.apellido}}</td>
+                <td>
+                    <span *ngIf="usuario.nombre.length > 0"> {{usuario.nombre}}</span>
+                </td>
+                <td> 
+                    <span *ngIf="usuario.apellido.length > 0">{{usuario.apellido}}</span> 
+                </td>
             </tr>
         </table>
 </div>
